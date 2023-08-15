@@ -1,0 +1,105 @@
+// imports
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+@mixin sp-layout {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin pc-layout {
+  @media screen and (min-width: 751px) {
+    @content;
+  }
+}
+
+//Variables
+$base-dark:rgba(40 , 40, 40);
+$base-dark-lighter: rgb(80, 73, 69);
+$base-dark-lighter-t: rgba(80, 73, 69, 0.9);
+$base-light: rgba(168, 153, 132);
+$b-shadow: 0 0 25px 0 black;
+
+body {
+  margin: 0;
+  padding: 0;
+  // background-color: $base-dark;
+  font-family: Lora, sans-serif;
+  color: white;
+  background-image: url("../images/electron_background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: $base-dark-lighter;
+  position: fixed;
+  left: 2%;
+  right: 2%;
+  top: 13px;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  box-shadow: $b-shadow;
+  border-radius: 5px;
+    
+  & li {
+    margin: 20px;
+  }
+    
+  & li a {
+    color: $base-light;
+    text-decoration: none;
+  }
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+  
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  display: inline;
+  position: fixed;
+  background: $base-dark-lighter;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  display: none;
+}
+
+.intro-section {
+  left: 2%;
+  right: 2%;
+  top: 13%;
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  background-color: $base-dark-lighter-t;
+  color: $base-light;
+  padding: 8% 22%;
+  box-shadow: $b-shadow;
+  border-radius: 5px;
+}
+
+.intro-inner h1 {
+  font-size: 65px;
+
+  & p {
+    color: $base-light;
+  }
+}
