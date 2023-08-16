@@ -26,6 +26,8 @@ function createWindow() {
 
   let menu = Menu.buildFromTemplate(menuTemplate);
   Menu.setApplicationMenu(menu);
+
+  mainWindow.setMinimumSize(700, 505);
 }
 
 app.whenReady().then(() => {
