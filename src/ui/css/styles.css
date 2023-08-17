@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+@import url("https://mshaugh.github.io/nerdfont-webfonts/build/agave-nerd-font.css");
+@font-face {
+  font-family: "Inconsolata Nerd Font";
+  src: url("\f031  InconsolataNerdFont-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: Lora, sans-serif;
+  font-family: "Inconsolata Nerd Font", sans-serif;
   color: white;
   background-image: url("../images/electron_background.jpg");
   background-position: center center;
@@ -33,15 +39,17 @@ body {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: rgb(168, 153, 132);
+  background-color: rgb(40, 40, 40);
   margin: 6px 0px;
   transition: 0.4s;
 }
 .hamburger.is-active:before {
   transform: translate(0px, 11px) rotate(-45deg);
+  background-color: rgb(168, 153, 132);
 }
 .hamburger.is-active:after {
   transform: translate(0px, -11px) rotate(45deg);
+  background-color: rgb(168, 153, 132);
 }
 .hamburger.is-active .bar {
   opacity: 0;
@@ -56,7 +64,7 @@ body {
   color: rgb(168, 153, 132);
   display: block;
   background-color: rgb(40, 40, 40);
-  padding-top: 120px;
+  padding-top: 33vh;
   text-align: center;
   z-index: 98;
   transition: 0.5s;
@@ -71,6 +79,7 @@ body {
   background-color: rgb(80, 73, 69);
   text-decoration: none;
   user-select: none;
+  color: rgb(168, 153, 132);
 }
 .mobile-nav a:hover {
   color: rgb(80, 73, 69);
