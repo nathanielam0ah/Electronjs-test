@@ -19,7 +19,7 @@ $base-dark:rgba(40 , 40, 40);
 $base-dark-lighter: rgb(80, 73, 69);
 $base-dark-lighter-t: rgba(80, 73, 69, 0.9);
 $base-light: rgba(168, 153, 132);
-$b-shadow: 0 0 25px 0 black;
+$b-shadow: 0 0 25px 0 #000000;
 
 body {
   margin: 0;
@@ -91,7 +91,7 @@ body {
   padding-top: 33vh;
   text-align: center;
   z-index: 98;
-  transition: 0.5s;
+  transition: 0.4s;
 
   & a {
     display: block;
@@ -110,6 +110,7 @@ body {
     color: $base-dark-lighter;
     background-color: $base-light;
     cursor: pointer;
+    transition: 0.8s;
   }
 
   &.is-active {
