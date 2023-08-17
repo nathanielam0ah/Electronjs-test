@@ -1,5 +1,5 @@
 # Electronjs-test
-<em>To run project need to first install:</em> <img alt='nodejs' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white' align='center' href='https://nodejs.org/en'>
+<em>To run project need to first install:</em> <a href='https://nodejs.org/en' ><img alt='nodejs' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white' align='center'></a>
 
 
 <em>Electron</em>
