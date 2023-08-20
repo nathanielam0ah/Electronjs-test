@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>flask!Electron</title>
+
+  </head>
+
+  <body class="page-todo">
+
+    
+    <header class="header-todo">
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+
+      <nav class="mobile-nav">
+      
+        <a href="../landing.html">Home</a>
+        <a href="#">To-Do</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Support</a>
+        
+      </nav>
+
+      <h1>To-Do Task</h1>
+      <form id="new-task-form">
+        <input
+         type="text" 
+         id="new-task-input"
+         placeholder="Type here ..."/>
+        <input 
+          type="submit"
+          id="new-task-submit"
+          value="Add Task"/>
+      </form>
+
+    </header>
+
+    <main class="main-todo">
+
+      <section class="task-list">
+        <h2>Tasks</h2>
+        <div id="tasks">
+
+          <div class="task">
+            <div class="content">
+              <input 
+                type="text"
+                class="text"
+                value="my shiny text"
+                readonly/>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    
+
+    <div class="intro-section" id="intro-id">
+      
+
+      
+      
+
+      
+
+    </div>
+    <script src="../js/ui.js"></script>
+  </body>
+
+</html>

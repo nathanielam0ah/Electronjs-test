@@ -1,6 +1,7 @@
 // imports
 @import url("https://mshaugh.github.io/nerdfont-webfonts/build/agave-nerd-font.css" /*"https://fonts.googleapis.com/css?family=Lora:400,400i,700"*/);
 @import 'substyles.scss';
+@import 'todostyles.scss';
 
 @mixin sp-layout {
   @media screen and (max-width: 750px) {
@@ -21,7 +22,7 @@ $base-dark-lighter-t: rgba(80, 73, 69, 0.9);
 $base-light: rgba(168, 153, 132);
 $b-shadow: 0 0 25px 0 #000000;
 
-body {
+.page-landing {
   margin: 0;
   padding: 0;
   font-family: "Inconsolata Nerd Font", sans-serif;
@@ -58,7 +59,7 @@ body {
     height: 5px;
     background-color: $base-dark;
     margin: 6px 0px;
-    transition: 0.5s;
+    transition: 0.4s;
   }
 
   &.is-active {
@@ -91,7 +92,7 @@ body {
   padding-top: 30vh;
   text-align: center;
   z-index: 98;
-  transition: 0.5s;
+  transition: 0.4s;
 
   & a {
     display: block;
@@ -110,7 +111,7 @@ body {
     color: $base-dark-lighter;
     background-color: $base-light;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
   }
 
   &.is-active {
@@ -118,7 +119,7 @@ body {
   }
 }
 
-.intro-section {
+.intro-section-landing {
   position: relative;
   text-align: center;
   align-items: center;
