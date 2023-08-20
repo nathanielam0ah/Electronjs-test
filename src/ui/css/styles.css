@@ -41,7 +41,7 @@ body {
   height: 5px;
   background-color: rgb(40, 40, 40);
   margin: 6px 0px;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 .hamburger.is-active:before {
   transform: translate(0px, 11px) rotate(-45deg);
@@ -64,10 +64,10 @@ body {
   color: rgb(168, 153, 132);
   display: block;
   background-color: rgb(40, 40, 40);
-  padding-top: 33vh;
+  padding-top: 30vh;
   text-align: center;
   z-index: 98;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 .mobile-nav a {
   display: block;
@@ -85,7 +85,7 @@ body {
   color: rgb(80, 73, 69);
   background-color: rgb(168, 153, 132);
   cursor: pointer;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 .mobile-nav.is-active {
   right: 0;

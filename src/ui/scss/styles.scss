@@ -58,7 +58,7 @@ body {
     height: 5px;
     background-color: $base-dark;
     margin: 6px 0px;
-    transition: 0.4s;
+    transition: 0.5s;
   }
 
   &.is-active {
@@ -88,10 +88,10 @@ body {
   color: $base-light;
   display: block;
   background-color: $base-dark;
-  padding-top: 33vh;
+  padding-top: 30vh;
   text-align: center;
   z-index: 98;
-  transition: 0.4s;
+  transition: 0.5s;
 
   & a {
     display: block;
@@ -110,7 +110,7 @@ body {
     color: $base-dark-lighter;
     background-color: $base-light;
     cursor: pointer;
-    transition: 0.8s;
+    transition: 0.5s;
   }
 
   &.is-active {
