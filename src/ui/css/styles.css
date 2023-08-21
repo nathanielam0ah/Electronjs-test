@@ -1,21 +1,22 @@
 @import url("https://mshaugh.github.io/nerdfont-webfonts/build/agave-nerd-font.css");
 @font-face {
-  font-family: "Inconsolata Nerd Font";
-  src: url("\f031  InconsolataNerdFont-Regular.woff") format("woff");
+  font-family: "Agave Nerd Font";
+  src: url("AgaveNerdFont-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Inconsolata Nerd Font", sans-serif;
+  font-family: "Agave Nerd Font", sans-serif;
 }
 
 .page-todo {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #374151;
+  background: rgb(80, 73, 69);
+  opacity: 0.9;
   color: white;
 }
 
@@ -27,7 +28,7 @@
 .header-todo h1 {
   font-size: 2.5rem;
   font-weight: 300;
-  color: #6B7280;
+  color: rgb(168, 153, 132);
   margin-bottom: 1rem;
 }
 .header-todo #new-task-form {
@@ -43,15 +44,15 @@ input, button {
 
 #new-task-input {
   flex: 1 1 0%;
-  background-color: #1f2937;
+  background-color: rgb(40, 40, 40);
   padding: 1rem;
   border-radius: 1rem;
   margin-right: 1rem;
-  color: #EEE;
+  color: rgb(168, 153, 132);
   font-size: 1.25rem;
 }
 #new-task-input::placeholder {
-  color: #6B7280;
+  color: rgb(168, 153, 132);
 }
 
 #new-task-submit {
@@ -84,14 +85,14 @@ input, button {
 .task-list h2 {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #6B7280;
+  color: rgb(168, 153, 132);
   margin-bottom: 1rem;
 }
 .task-list #tasks .task {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #111827;
+  background-color: rgb(40, 40, 40);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -102,7 +103,7 @@ input, button {
   width: 70%;
 }
 .task-list #tasks .task .content .text {
-  color: #EEE;
+  color: rgb(168, 153, 132);
   font-size: 1.125rem;
   width: 100%;
   display: block;
@@ -140,10 +141,14 @@ input, button {
   color: crimson;
 }
 
+* {
+  font-family: "Agave Nerd Font", sans-serif;
+}
+
 .page-landing {
   margin: 0;
   padding: 0;
-  font-family: "Inconsolata Nerd Font", sans-serif;
+  font-family: "Agave Nerd Font", sans-serif;
   color: white;
   background-image: url("../images/electron_background.jpg");
   background-position: center center;
@@ -174,7 +179,7 @@ input, button {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(168, 153, 132);
   margin: 6px 0px;
   transition: 0.4s;
 }

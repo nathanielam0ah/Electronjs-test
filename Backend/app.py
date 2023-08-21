@@ -1,4 +1,6 @@
-import pypyodbc as odbc
+''' WILL IMPLEMENT FUNCTIONS LATER '''
+
+'''import pypyodbc as odbc
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
@@ -27,4 +29,4 @@ def get_articles():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True) '''

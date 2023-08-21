@@ -5,18 +5,24 @@ $grey: #6B7280;
 $light: #EEE;
 $pink: #EC4A99;
 $purple: #8B5CF6;
+$base-dark:rgba(40 , 40, 40);
+$base-dark-lighter: rgb(80, 73, 69);
+$base-dark-lighter-t: rgba(80, 73, 69, 0.9);
+$base-light: rgba(168, 153, 132);
+$b-shadow: 0 0 25px 0 #000000;
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Inconsolata Nerd Font", sans-serif;
+  font-family: "Agave Nerd Font", sans-serif;
 }
 
 .page-todo {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: $dark;
+  background: $base-dark-lighter;
+  opacity: 0.9;
   color: white;
 }
 
@@ -28,7 +34,7 @@ $purple: #8B5CF6;
   & h1 {
     font-size: 2.5rem;
     font-weight: 300;
-    color: $grey;
+    color: $base-light;
     margin-bottom: 1rem;
   }
 
@@ -46,15 +52,15 @@ input, button {
 
 #new-task-input {
   flex: 1 1 0%;
-  background-color: $darker;
+  background-color: $base-dark;
   padding: 1rem;
   border-radius: 1rem;
   margin-right: 1rem;
-  color: $light;
+  color: $base-light;
   font-size: 1.25rem;
 
   &::placeholder {
-    color: $grey;
+    color: $base-light;
   }
 }
 
@@ -90,7 +96,7 @@ input, button {
   & h2 {
     font-size: 1.5rem;
     font-weight: 300;
-    color: $grey;
+    color: $base-light;
     margin-bottom: 1rem;
   }
 
@@ -98,7 +104,7 @@ input, button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $darkest;
+    background-color: $base-dark;
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -109,7 +115,7 @@ input, button {
       width: 70%;
 
       & .text {
-        color: $light;
+        color: $base-light;
         font-size: 1.125rem;
         width: 100%;
         display: block;
