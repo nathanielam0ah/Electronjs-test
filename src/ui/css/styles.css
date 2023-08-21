@@ -113,7 +113,9 @@ input, button {
 }
 .task-list #tasks .task .actions {
   display: flex;
-  margin: 0 -0.5rem;
+  align-items: center; /* Add this line to vertically align buttons */
+  margin-left: auto; /* Push buttons to the right */
+  margin-right: -0.5rem; /* Adjust negative margin for spacing */
 }
 .task-list #tasks .task .actions button {
   cursor: pointer;
@@ -128,6 +130,14 @@ input, button {
 }
 .task-list #tasks .task .actions button:active {
   opacity: 0.6;
+}
+.task-list #tasks .task .actions button.edit {
+  background-image: linear-gradient(to right, #EC4A99, #8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.task-list #tasks .task .actions button.delete {
+  color: crimson;
 }
 
 .page-landing {

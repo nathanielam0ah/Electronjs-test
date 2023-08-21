@@ -7,140 +7,152 @@ $pink: #EC4A99;
 $purple: #8B5CF6;
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Inconsolata Nerd Font", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inconsolata Nerd Font", sans-serif;
 }
 
 .page-todo {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: $dark;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: $dark;
+  color: white;
 }
 
 .header-todo {
-    padding: 5rem 1rem;
-    width: 100%;
-    margin: 0 auto;
+  padding: 5rem 1rem;
+  width: 100%;
+  margin: 0 auto;
 
-    & h1 {
-        font-size: 2.5rem;
-        font-weight: 300;
-        color: $grey;
-        margin-bottom: 1rem;
-    }
+  & h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $grey;
+    margin-bottom: 1rem;
+  }
 
-    & #new-task-form {
-        display: flex;
-    }
+  & #new-task-form {
+    display: flex;
+  }
 }
 
 input, button {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 #new-task-input {
-    flex: 1 1 0%;
-    background-color: $darker;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    color: $light;
-    font-size: 1.25rem;
+  flex: 1 1 0%;
+  background-color: $darker;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: $light;
+  font-size: 1.25rem;
 
-    &::placeholder {
-        color: $grey;
-    }
+  &::placeholder {
+    color: $grey;
+  }
 }
 
 #new-task-submit {
-    color: $pink;
-    font-size: 1.25rem;
-    font-weight: 700;
-    background-image: linear-gradient(to right, $pink, $purple);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    transition: 0.4s;
+  color: $pink;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $pink, $purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
 
-    &:hover {
-        opacity: 0.8;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 
-    &:active {
-        opacity: 0.6;
-    }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-todo {
-    flex: 1 1 0%;
-    padding: 2rem 1rem;
-    width: 100%;
-    margin: 0 auto;
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .task-list {
+  padding: 1rem;
+
+  & h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $grey;
+    margin-bottom: 1rem;
+  }
+
+  & #tasks .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $darkest;
     padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 
-    & h2 {
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: $grey;
-        margin-bottom: 1rem;
+    & .content {
+      display: flex;
+      align-items: center;
+      width: 70%;
+
+      & .text {
+        color: $light;
+        font-size: 1.125rem;
+        width: 100%;
+        display: block;
+        transition: 0.4s;
+      }
+
+      & .text:not(:read-only) {
+        color: $pink;
+      }
     }
 
-    & #tasks .task {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $darkest;
-        padding: 1rem;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
+    & .actions {
+      display: flex;
+      align-items: center; /* Add this line to vertically align buttons */
+      margin-left: auto; /* Push buttons to the right */
+      margin-right: -0.5rem; /* Adjust negative margin for spacing */
 
-        & .content {
-            display: flex;
-            align-items: center;
-            width: 70%;
+      & button {
+        cursor: pointer;
+        margin: 0 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.4s;
 
-            & .text {
-                color: $light;
-                font-size: 1.125rem;
-                width: 100%;
-                display: block;
-                transition: 0.4s;
-            }
-
-            & .text:not(:read-only) {
-                color: $pink;
-            }
+        &:hover {
+          opacity: 0.8;
         }
 
-        & .actions {
-            display: flex;
-            margin: 0 -0.5rem;
-
-            & button {
-                cursor: pointer;
-                margin: 0 0.5rem;
-                font-size: 1.125rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                transition: 0.4s;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-
-                &:active {
-                    opacity: 0.6;
-                }
-            }
+        &:active {
+          opacity: 0.6;
         }
+
+        &.edit {
+          background-image: linear-gradient(to right, $pink, $purple);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        &.delete {
+          color: crimson;
+        }
+      }
     }
+  }
 }
